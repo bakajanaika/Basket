@@ -36,7 +36,7 @@ class Main {
         //
         Product[] boughtProducts = {};
         Basket basket = new Basket(boughtProducts);
-
+        // // // // // // // // // // // // // // // // // // // //
         User log = new User("Ian", "123");
 
         System.out.println("Введите логин: ");
@@ -62,6 +62,7 @@ class Main {
                     System.out.println("Вы ввели неверный пароль!");
                 }
             }
+            // // // // // // // // // // // // // // //
             while (true) {
                 System.out.println("Выберите отдел: продуктовый, электроника, канцелярия");
                 System.out.println("Если вы хотите завершить покупки и перейти в корзину напишите \"купить\"");
@@ -76,7 +77,7 @@ class Main {
                     System.out.println("Выберите товары, которые хотите добавить в корзину: ");
                     while (true) {
                         String answer2 = scan.nextLine().trim();
-                        System.out.println("Выберите еще или если хотите вернуться к выбору категории напишите\"назад\"");
+                        System.out.println("Выберите еще или если хотите вернуться к выбору категории напишите \"назад\"");
                         if (answer2.equalsIgnoreCase("назад")) {
 
                             break;
