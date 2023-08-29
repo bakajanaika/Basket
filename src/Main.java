@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+
 import models.User;
 import models.Basket;
 import models.Category;
