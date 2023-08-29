@@ -5,6 +5,8 @@ import models.Basket;
 import models.Category;
 import models.Product;
 
+import javax.sound.midi.Soundbank;
+
 class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -37,7 +39,8 @@ class Main {
         Product[] boughtProducts = {};
         Basket basket = new Basket(boughtProducts);
         // // // // // // // // // // // // // // // // // // // //
-        User log = new User("Ian", "123");
+        System.out.println("Введите логин и пароль для регистрации: ");
+        User log = new User(scan.nextLine(), scan.nextLine());
 
         System.out.println("Введите логин: ");
 
@@ -63,6 +66,9 @@ class Main {
 
                     System.out.println("Вы ввели неверный пароль!");
                     tryCount++;
+                    if (tryCount == 3){
+                        return;
+                    }
                 }
             }
             // // // // // // // // // // // // // // //
