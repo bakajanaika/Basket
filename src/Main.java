@@ -47,11 +47,12 @@ class Main {
                 if (log_in.equals(log.login)) {
                     break;
                 } else {
-                    System.out.println("Вы ввыели неверный логин!");
+                    System.out.println("Вы ввели неверный логин!");
                 }
             }
             System.out.println("Введите пароль: ");
-            while (true) {
+            int tryCount = 0;
+            while (tryCount <= 3) {
                 String pass_in = scan.nextLine();
 
                 if (pass_in.equals(log.pass)) {
@@ -59,7 +60,9 @@ class Main {
                     System.out.println("Успешная авторизация!");
                     break;
                 } else {
+
                     System.out.println("Вы ввели неверный пароль!");
+                    tryCount++;
                 }
             }
             // // // // // // // // // // // // // // //
