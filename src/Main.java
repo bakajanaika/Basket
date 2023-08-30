@@ -79,7 +79,7 @@ class Main {
                 String answer = scan.nextLine().trim();
 
                 if (answer.equalsIgnoreCase("продуктовый")) {
-                    for (Product products : Arrays.asList(cat1.name)) {
+                    for (Product products : cat1.name) {
                         System.out.println(products);
 
                     }
@@ -101,7 +101,7 @@ class Main {
 
 
                 } else if (answer.equalsIgnoreCase("электроника")) {
-                    for (Product products : Arrays.asList(cat2.name)) {
+                    for (Product products : cat2.name) {
                         System.out.println(products);
                     }
                     System.out.println("Выберите товары, которые хотите добавить в корзину: ");
@@ -122,7 +122,7 @@ class Main {
 
                     }
                 } else if (answer.equalsIgnoreCase("канцелярия")) {
-                    for (Product products : Arrays.asList(cat3.name)) {
+                    for (Product products : cat3.name) {
                         System.out.println(products);
                     }
                     System.out.println("Выберите товары, которые хотите добавить в корзину: ");
